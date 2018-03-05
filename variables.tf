@@ -10,6 +10,10 @@ variable name {
   //default = ""
 }
 
+variable type {
+  //default = ""
+}
+
 variable ttl {
   default = "300"
 }
