@@ -4,6 +4,8 @@ resource "aws_route53_record" "default" {
   name = "${var.name}"
   type = "CNAME"
 
+  ttl = "${var.ttl}"
+
   records = [
     "${var.record}"
   ]

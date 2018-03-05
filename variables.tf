@@ -10,6 +10,10 @@ variable name {
   //default = ""
 }
 
+variable ttl {
+  default = "300"
+}
+
 variable record {
   //default = ""
 }
