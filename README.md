@@ -6,9 +6,7 @@ module "domain" {
   source = "git::https://gitlab.com/nalbam/terraform-aws-domain-record.git"
 
   zone_id = ""
-  name = "demo.nalbam.com"
-  
-  zone_id = ""
-  alias_name = ""
+  name = "demo-api.nalbam.com"
+  record = "demo-api.aws.com"
 }
 ```

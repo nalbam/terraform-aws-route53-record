@@ -10,10 +10,6 @@ variable name {
   //default = ""
 }
 
-variable alias_name {
-  //default = ""
-}
-
-variable alias_zone_id {
+variable record {
   //default = ""
 }
