@@ -1,6 +1,6 @@
 zone_id = "sample"
 
 name = "sample"
-name = "CNAME"
+type = "CNAME"
 
 record = "demo.sample.com"
