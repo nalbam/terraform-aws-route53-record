@@ -6,7 +6,5 @@ resource "aws_route53_record" "default" {
 
   ttl = "${var.ttl}"
 
-  records = [
-    "${var.record}"
-  ]
+  records = "${var.records}"
 }

@@ -8,6 +8,8 @@ module "domain" {
   zone_id = "${var.zone_id}"
   name = "demo-api.nalbam.com"
   type = "CNAME"
-  record = "demo-api.elasticbeanstalk.com"
+  records = [
+    "demo-api.elasticbeanstalk.com"
+  ]
 }
 ```

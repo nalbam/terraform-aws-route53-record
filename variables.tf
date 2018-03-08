@@ -22,7 +22,8 @@ variable ttl {
   description = "The TTL of the record."
 }
 
-variable record {
-  //default = ""
+variable records {
+  type = "list"
+  //default = []
   description = "A string list of records."
 }
