@@ -1,15 +1,17 @@
 # terraform-aws-route53-record
 
 ## usage
-```
-module "domain" {
-  source = "git::https://github.com/nalbam/terraform-aws-route53-record.git"
 
-  zone_id = "${var.zone_id}"
-  name = "demo-api.nalbam.com"
-  type = "CNAME"
+```
+module "record" {
+  source = "github.com/nalbam/terraform-aws-route53-record"
+
+  zone_id = module.domain.zone_id
+  name    = "blog.${module.domain.name}"
+  type    = "CNAME"
+
   records = [
-    "demo-api.elasticbeanstalk.com"
+    "cname.domain.com",
   ]
 }
 ```
